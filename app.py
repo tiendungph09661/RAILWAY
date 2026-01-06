@@ -1,5 +1,9 @@
 from flask import Flask, render_template, request, jsonify
 from flask_cors import CORS
+from flask_cors import CORS
+
+app = Flask("https://email-resend-api.dungproject.workers.dev")
+CORS(app)
 import imaplib
 # import smtplib
 import email
